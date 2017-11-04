@@ -16,9 +16,10 @@ public class Room {
     @Column(name = "BED_INFO")
     private String bedInfo;
 
-    public long getId(){
+    public long getId() {
         return id;
     }
+
     public void setId(long id) {
         this.id = id;
     }
