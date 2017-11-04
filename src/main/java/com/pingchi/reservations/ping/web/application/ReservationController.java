@@ -24,7 +24,7 @@ public class ReservationController {
     private ReservationService reservationService;
     @RequestMapping(method = RequestMethod.GET)
     public String getReservations( @RequestParam(value = "date", required = false) String dateString, Model model){
-        Date date = null;
+        Date date;
         if(null != dateString){
             try{
                 date = DATE_FORMAT.parse(dateString);
